@@ -1,18 +1,9 @@
-import React, { useState, useEffect } from 'react'
-import { Redirect } from "react-router-dom"
+import React from 'react';
 
-
-const Index = (props) => {
-  const [option, setOption] = useState({})
-  const [shouldRedirect, setShouldRedirect] = useState(false)
-  const [currentUser, setCurrentUser] = useState(null)
-
-  useEffect(() =>{
-    fetch(`/api/v1/options/${optionId}`)
-  })
-
-
-
-
-
+const Index = props =>{
+  return(
+    <h2>hi there</h2>
+  )
 }
+
+export default Index;
