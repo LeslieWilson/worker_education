@@ -2,7 +2,7 @@ import React from 'react'
 import ContactForm from "../components/landing_page/ContactForm"
 import StepTile from "../components/landing_page/StepTile"
 import WeekCalendar from 'react-week-calendar';
-import 'react-week-calendar/dist/style.less';
+
 
 const LandingPage = (props) => {
 
@@ -37,11 +37,11 @@ const stepData=[
 
   return (
     <div>
-   <ContactForm />
+
    <div className="steps-info">
    {stepTiles}
   </div>
-
+<ContactForm />
   <WeekCalendar />
    </div>
   )
