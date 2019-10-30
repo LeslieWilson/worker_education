@@ -14,4 +14,66 @@
  *= require_self
  *= require foundation_and_overrides
 
+
  */
+
+
+/*navbar==================*/
+ .top-bar{
+   background-color:rgb(19,170,180);
+   height:3.6em;
+ }
+
+ .entering{
+   background-color:rgb(19,170,180);
+   color:white;
+   display:flex;
+
+ }
+
+.entering-square{
+  background-color:rgb(19,170,180);
+}
+
+
+.right-entering-box{
+  color:white;
+display:flex;
+
+}
+
+.entering a {
+  color:white;
+  padding:20px;
+  margin-top:.08em;
+  height:.2em;
+}
+
+.entering a:hover {
+  color:white;
+  padding:20px;
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.WE_logo{
+  color:white;
+  font-size:.7em;
+  padding:1px;
+}
+
+a.WE_logo:hover{
+  color:white;
+
+}
