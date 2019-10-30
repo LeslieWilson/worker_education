@@ -2,7 +2,7 @@ import React from 'react'
 
 const StepTile = (props) => {
   return(
-  <div className = "step-tile">
+  <div className = {props.class}>
   <img className="step-image" src={props.image}></img>
   <p>{props.description}</p>
   </div>
