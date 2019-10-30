@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'static_pages#index'
 
-  get '*path', to: "static_pages#index"
+  get '/options', to: "static_pages#index"
 
 
   devise_for :users

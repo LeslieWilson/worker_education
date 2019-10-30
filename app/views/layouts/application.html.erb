@@ -9,15 +9,18 @@
 <body>
 
   <nav class="top-bar">
-    <h1><a href="/">W_E_</a></h1>
+    <h1><a class= "WE_logo" href="/">W_E._</a></h1>
 
-    <section class="NavBar">
-      <ul class="right">
+    <section class="entering_square">
+      <ul class="right-entering-box">
         <%- if current_user -%>
-          <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+          <div class = "entering"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></div>
         <%- else -%>
-          <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-          <li><%= link_to 'Sign In', new_user_session_path %></li>
+          <div class = "entering"><%= link_to 'Sign Up', new_user_registration_path %></div>
+          <div class = "entering"><%= link_to 'Sign In', new_user_session_path %>
+          <div class = "entering"><%= link_to 'Apply', options_path %></div>
+          <div class = "entering"><%= link_to 'Contact', options_path %></div>
+
         <%- end -%>
       </ul>
     </section>
