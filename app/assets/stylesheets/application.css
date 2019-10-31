@@ -45,8 +45,8 @@ display:flex;
 .entering a {
   color:white;
   padding:20px;
-  margin-top:.08em;
-  height:.2em;
+  margin-top:-5px;;
+  height:2em;
 }
 
 .entering a:hover {
@@ -69,11 +69,183 @@ display:flex;
 
 .WE_logo{
   color:white;
-  font-size:.7em;
+  font-size:.6em;
   padding:1px;
+  line-height:3em;
 }
 
 a.WE_logo:hover{
   color:white;
+
+}
+
+
+/*landingpage============*/
+
+.Worker_Education_{
+  font-size:3.5em;
+  text-align:center;
+  margin-top:1.6em;
+  color:rgb(39,171,181);
+}
+
+.landing_page_paragraph{
+  font-size:1.1em;
+  margin-left:3.2em;
+ padding-left:5em;
+ padding-right:5em;
+  margin-top:1.8em;
+  font-weight:bold;
+  color:rgb(39,171,181);
+}
+
+ul.landing_page_bullets{
+list-style-type: square;
+list-style-size:
+
+
+}
+/*
+span.largerBullet{
+  font-size:1.2em;
+}*/
+
+li.liLand1{
+  color:red;
+  margin-left:7em;
+  font-size:1.35em;
+  color:rgb(39,171,181);
+  font-weight:bolder;
+}
+li.liLand2{
+  color:red;
+  margin-left:7em;
+  font-size:1.35em;
+  color:rgb(39,171,181);
+  font-weight:bolder;
+}
+li.liLand3{
+  color:red;
+  margin-left:7em;
+  font-size:1.35em;
+  color:rgb(39,171,181);
+  font-weight:bolder;
+
+}
+
+.apply_now_btn{
+  color:rgb(39,171,181);
+  font-size:1.35em;
+  border:1.5px solid rgb(39,171,181);
+  padding:.8em 2.2em .8em 2.2em;
+  margin-top:3em;
+  font-weight:normal;
+}
+
+
+.btn{
+  text-align:center;
+}
+
+.select_btn_1{
+  color:rgb(39,171,181);
+  font-size:1.35em;
+  padding:.8em 2.2em .8em 2.2em;
+  background-color:rgb(223,237,235);
+}
+
+.select_btn_2{
+  color:rgb(39,171,181);
+  font-size:1.35em;
+  padding:.8em 2.2em .8em 2.2em;
+  background-color:rgb(0,166,177);
+  color:white;
+
+}
+
+/*div.image-wrapper{
+display:flex;
+justify-content:flex-end;
+}*/
+
+.steps-info{
+  display:flex;
+  justify-content: space-around;
+  width:100%;
+  height:30em;
+  margin-top:4%;
+  background-color:rgb(0,166,177);
+  color:white;
+}
+
+.steps-info-2{
+
+  justify-content: space-around;
+  width:100%;
+  height:50em;
+  margin-top:4%;
+  background-color:rgb(0,166,177);
+  color:white;
+}
+
+img.step-image{
+  display:flex;
+  float:left;
+  position:absolute;
+  height:10px;
+  width:20px;
+}
+
+
+.bachelors_bubbles{
+  display:flex;
+  position:absolute;
+  width:100%;
+  height:100%;
+  margin-top:-5%;
+}
+
+.bachelors_bubble1{
+  width:50%;
+  height:50%;
+  background-color:rgb(98,193,199);
+  border-radius:10%;
+  color:white;
+
+}
+.bachelors_bubble2{
+  width:50%;
+  height:50%;
+  background-color:rgb(223,237,235);
+  border-radius:10%;
+  color:rgb(0,166,177);
+
+}
+
+.bach_bubble_text{
+  margin-top:2em;
+  text-align:center;
+}
+
+.image-spacer{
+  padding:5em;;
+}
+
+.option_wrapper{
+  display:flex;
+  height:20em;
+  width:100%
+}
+
+.options_I_have{
+  color:white;
+  background-color:rgb(98,193,199);
+  text-align:center;
+}
+
+.option_text{
+  color:rgb(0,166,177);
+  font-weight:bold;
+  text-align:center;
 
 }

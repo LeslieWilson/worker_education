@@ -8,19 +8,19 @@ const OptionsPage = (props) =>{
     {
       id:1,
       image:"https://i.imgur.com/MRuIRf0.png",
-      description:"blah",
+      description:"A coding bootcamp is an intensive program",
       class:"pics1"
     },
     {
       id:2,
       image:"https://i.imgur.com/MRuIRf0.png",
-      description:"blah",
+      description:"A coding bootcamp is an intensive program",
       class:"pics1"
     },
     {
       id:3,
       image:"https://i.imgur.com/MRuIRf0.png",
-      description:"blah",
+      description:"A coding bootcamp is an intensive program",
       class:"pics1"
     }
   ]
@@ -50,10 +50,17 @@ forms =
 
 return (
   <div>
+  <div className="option_wrapper">
+  <div className="options_I_have">
   <h1>I have a bachelors degree</h1>
+  </div>
+  <div className="option_text">
   <p>blahblah blah the perosn who is going to th emarket lourm ipseym</p>
+  </div>
+  </div>
 
-  <div className="steps-info">
+
+  <div className="steps-info-2">
     {stepTiles}
   </div>
 <h1>Schedule a Call</h1>
