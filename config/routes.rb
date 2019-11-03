@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :personal_datapoints, only: [:create]
+      resources :appointments,
+      only: [:index]
     end
   end
 end

@@ -55,6 +55,7 @@ const LandingPage = (props) => {
 
   return (
     <div>
+    <div className = "image">
       <div>
         <h1 className= "Worker_Education_">Worker_Education._</h1>
         <p className="landing_page_paragraph">blahblah blah the perosn who is going to th emarket lourm ipseym. blah blah blah I hate this blah blah and I know who took th ebus to prtugal it was me. It was always me. I am so upset right now. I love worker education. I love coffee. I love rainbows. I love fishing. I love eating buscits.I want to say more stuff  so this will be a square.</p>
@@ -73,6 +74,8 @@ const LandingPage = (props) => {
       <button onClick={handleClick} className="apply_now_btn">Apply Now</button>
       </div>
       {forms}
+
+      </div>
 
 
 

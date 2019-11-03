@@ -49,23 +49,34 @@ forms =
 }
 
 return (
-  <div>
-  <div className="option_wrapper">
-  <div className="options_I_have">
-  <h1>I have a bachelors degree</h1>
-  </div>
-  <div className="option_text">
-  <p>blahblah blah the perosn who is going to th emarket lourm ipseym</p>
-  </div>
-  </div>
+<div>
 
 
-  <div className="steps-info-2">
-    {stepTiles}
-  </div>
+
+<div className= "blockDiv">
+
+<div className = "blockLeft">
+<h1 className= "blockLeftText">I have a bachelors</h1>
+</div>
+
+
+
+</div>
+
+
+<div className="steps-info-2">
+  {stepTiles}
+</div>
+
+<div>
 <h1>Schedule a Call</h1>
+</div>
+
+<div>
   <button onClick={handleClick}>Call Now</button>
-  </div>
+</div>
+
+</div>
   )
 }
 export default OptionsPage
