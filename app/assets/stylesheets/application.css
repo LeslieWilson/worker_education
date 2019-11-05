@@ -16,12 +16,30 @@
 
 
  */
-
+ body:before, body:after {
+     content: "";
+     position: fixed;
+     background: #900;
+     left: 0;
+     right: 0;
+     height: 0px;
+ }
+ body:before {
+     top: 0;
+ }
+ body:after {
+     bottom: 0;
+ }
+ body {
+     border-left: 100px solid white;
+     border-right: 100px solid white;
+ }
 
 /*navbar==================*/
  .top-bar{
    background-color:rgb(19,170,180);
    height:3.6em;
+     font-family:'Din Alternate';
  }
 
  .entering{
@@ -72,6 +90,7 @@ display:flex;
   font-size:.6em;
   padding:1px;
   line-height:3em;
+  font-family:'Din Alternate';
 }
 
 a.WE_logo:hover{
@@ -87,24 +106,39 @@ a.WE_logo:hover{
   text-align:center;
   margin-top:1.6em;
   color:rgb(39,171,181);
+
 }
 
 .landing_page_paragraph{
   font-size:1.1em;
-  margin-left:3.2em;
- padding-left:5em;
+  margin-left:11em;
+ padding-left:14em;
  padding-right:5em;
-  margin-top:1.8em;
+  margin-top:18.8em;
   font-weight:bold;
+  max-width:99em;
   color:rgb(39,171,181);
+  font-family:'Din Alternate';
+
+}
+
+.image{
+  background:url("landing_background.gif") no-repeat ;
+  background-size:100%;
+  background-position: right 0px bottom -70px;
+  height:65em;
+  background-color:black;
 }
 
 ul.landing_page_bullets{
 list-style-type: square;
-list-style-size:
+margin-top:4em;
+margin-left:25.25em;
 
 
 }
+
+
 /*
 span.largerBullet{
   font-size:1.2em;
@@ -116,6 +150,7 @@ li.liLand1{
   font-size:1.35em;
   color:rgb(39,171,181);
   font-weight:bolder;
+  font-family:'Din Alternate';
 }
 li.liLand2{
   color:red;
@@ -123,6 +158,7 @@ li.liLand2{
   font-size:1.35em;
   color:rgb(39,171,181);
   font-weight:bolder;
+  font-family:'Din Alternate';
 }
 li.liLand3{
   color:red;
@@ -130,16 +166,18 @@ li.liLand3{
   font-size:1.35em;
   color:rgb(39,171,181);
   font-weight:bolder;
+  font-family:'Din Alternate';
 
 }
 
 .apply_now_btn{
   color:rgb(39,171,181);
-  font-size:1.35em;
-  border:1.5px solid rgb(39,171,181);
-  padding:.8em 2.2em .8em 2.2em;
-  margin-top:3em;
-  font-weight:normal;
+  background-color:white;
+  font-size:1.5em;
+  border:2px solid rgb(39,171,181);
+  padding:2em 6em 2em 6em;
+  margin-top:8em;
+  font-weight:bold;
 }
 
 
@@ -152,6 +190,8 @@ li.liLand3{
   font-size:1.35em;
   padding:.8em 2.2em .8em 2.2em;
   background-color:rgb(223,237,235);
+  margin-top:7%;
+  font-family:'Din Alternate';
 }
 
 .select_btn_2{
@@ -160,6 +200,8 @@ li.liLand3{
   padding:.8em 2.2em .8em 2.2em;
   background-color:rgb(0,166,177);
   color:white;
+  margin-top:7%;
+  font-family:'Din Alternate';
 
 }
 
@@ -168,31 +210,86 @@ display:flex;
 justify-content:flex-end;
 }*/
 
-.steps-info{
+/*.steps-info{
   display:flex;
   justify-content: space-around;
   width:100%;
   height:30em;
-  margin-top:4%;
   background-color:rgb(0,166,177);
   color:white;
+}*/
+
+.svg_test{
+margin-left: 8%;
+padding: 1em;
+margin-top: 4em;
+width:86.5%;
+height:27em;
 }
 
-.steps-info-2{
-
+.textUnderSvgLanding{
+  font-size:4em;
+  display:flex;
   justify-content: space-around;
-  width:100%;
-  height:50em;
-  margin-top:-28.65%;
-  background-color:rgb(0,166,177);
-  color:white;
-
+  margin-bottom: 2em;
+  font-family:'Din Alternate';
 }
+
+.box1{
+margin-left:-11em;
+position:absolute;
+margin-top:-1.3em;
+color:white
+}
+
+.box1sm{
+position:absolute;
+margin-left:-26.3em;
+margin-top:1.5em;
+color:white
+}
+
+.box2{
+  margin-left:-1em;
+  position:absolute;
+  margin-top:-1.3em;
+  color:white
+}
+
+.box2sm{
+position:absolute;
+margin-left:-4em;
+margin-top:1.5em;
+color:white
+}
+
+.box3{
+  margin-left:8em;
+  position:absolute;
+  margin-top:-1.3em;
+  color:white
+}
+
+.box3sm{
+margin-left:30em;
+margin-top:1.5em;
+color:white;
+}
+
+.step-tiles-replacement{
+  background-color:rgb(0,166,177);
+}
+
+/*@font-face {
+font-family: 'DIN Alternate Bold';
+font-style: normal;
+font-weight: normal;
+src: local('DIN Alternate Bold'), url('DINAlternate-Bold.woff') format('woff');
+}*/
 
 img.step-image{
   display:flex;
   float:left;
-  position:absolute;
   height:10px;
   width:20px;
 }
@@ -200,7 +297,6 @@ img.step-image{
 
 .bachelors_bubbles{
   display:flex;
-  position:absolute;
   width:100%;
   height:100%;
   margin-top:-5%;
@@ -212,6 +308,8 @@ img.step-image{
   background-color:rgb(98,193,199);
   border-radius:10%;
   color:white;
+  padding-bottom:4em;
+  font-size:1.2em;
 
 }
 .bachelors_bubble2{
@@ -220,35 +318,149 @@ img.step-image{
   background-color:rgb(223,237,235);
   border-radius:10%;
   color:rgb(0,166,177);
-
+  padding-bottom:4em;
+  font-size:1.2em;
 }
 
 .bach_bubble_text{
-  margin-top:2em;
+  margin-top:1em;
   text-align:center;
+  font-family:'Din Alternate';
+  font-size:4.5em;
+  max-width:5em;
+  margin-left:3.8em;
 }
 
+/*options page========*/
+/*
 .image-spacer{
   padding:5em;;
-}
-
-
+}*/
 
 .blockDiv{
-  border:1px solid purple;
+  display:flex;
+
 }
 
 .blockLeft{
-  border:1px solid blue;
+  height:54em;
+  width:50%;
+  color:white;
+  background-color:rgb(98,193,199);
+  text-align:center;
+
+}
+
+.blockLeftText{
+  margin-top:34%;
+  font-size:4.5em;
 }
 
 .blockRight{
-  border:1px solid red;
+  height:54em;
+  width:50%;
+  color:rgb(0,166,177);
+  font-weight:bold;
+}
+
+.blockRightText{
+    margin-left: 10%;
+    margin-top: 17%;
+    overflow-wrap:break-word;
+    position:absolute;
 }
 
 .FrontEndDev{
-  border:2px solid yellow;
+color: rgb(32,154,163);
+text-align:center;
+padding:4em;
+height:55em;
+
 }
+
+.step-tiles-replacement-2{
+  background-color:rgb(0,166,177);
+  height:45%;
+}
+
+.fsd{
+  font-size:5em;
+  font-weight:bold;
+  margin-bottom:.5em;
+}
+
+.fsdSmall{
+  font-size:1.7em;
+  font-weight:bold;
+  margin-bottom:1em;
+}
+/*
+.svg_test_2{
+margin-left: 8%;
+padding: 1em;
+margin-top: 4em;
+width:86.5%;
+height:27em;
+transform:rotate(90deg);
+}*/
+
+.svg2{
+  margin-left:7em;
+  margin-top:8em;
+  margin-bottom:7em;
+}
+
+.total_scholarships{
+  background-color:white;
+
+}
+
+.total{
+  color:rgb(32,154,163);
+  font-size:3.2em;
+  text-align:center;
+  margin-top:1em;
+  font-weight:bold;
+  font-family:'Din Alternate';
+}
+
+.totalp{
+  color:rgb(32,154,163);
+  font-size:1.5em;
+  max-width:52%;
+  margin-top:2em;
+  margin-left:25%;
+  font-family:'Din Alternate';
+  overflow-wrap:break-word;
+}
+
+.scholarshipImg{
+margin-top:3em;
+}
+
+
+.schedule_call{
+  background-color:rgb(223,237,235);
+}
+
+.skedgeAcall{
+  text-align:center;
+}
+
+.skedgep{
+  text-align:center;
+}
+
+/*.steps-info-2{
+
+  justify-content: space-around;
+  width:100%;
+  height:50em;
+  margin-top:-28.65%;
+  background-color:rgb(0,166,177);
+  color:white;
+
+}*/
 
 /*.options_wrapper{
   display:flex;
@@ -256,33 +468,80 @@ img.step-image{
   width:150em;
 }
 
-.options_I_have_section1{
-  color:white;
-  background-color:rgb(98,193,199);
-  text-align:center;
-  height:57%;
-  width:50%;
-}
 
-.options_I_have_section2{
-  color:rgb(0,166,177);
-  font-weight:bold;
-  text-align:center;
-  text-align:justify;
 
-}
 
-.optionParagraph{
-  margin-left: 27%;
-    margin-top: 42.5%;
-    max-width: 61em;
 
-}
 
-.IHaveBachelors{
-  margin-top:34%;
-  font-size:4.5em;
-}
 
 /*
 full stack dev section of option page========*/
+
+
+@media only screen and (min-width:1440px){
+
+  .image{
+    background:url("landing_background.gif") no-repeat ;
+    background-size:100%;
+    background-position: right 0px bottom -70px;
+    height:50em;
+    background-color:blue;
+  }
+
+  body {
+      border-left: 0px solid white;
+      border-right: 0px solid white;
+  }
+
+}
+
+
+@media only screen and (min-width:1920px){
+
+  .image{
+    background:url("landing_background.gif") no-repeat ;
+    background-size:100%;
+    background-position: right 0px bottom -70px;
+    height:64em;
+    background-color:red;
+  }
+
+  body {
+      border-left: 100px solid white;
+      border-right: 100px solid white;
+  }
+
+}
+
+
+
+
+
+
+  .cls-1, .cls-6 {
+    fill: none;
+  }
+
+  .cls-1, .cls-2, .cls-4 {
+    stroke: #fff;
+  }
+
+  .cls-1 {
+    stroke-width: 10px;
+  }
+
+  .cls-2, .cls-3, .cls-4 {
+    fill: #fff;
+  }
+
+  .cls-2 {
+    stroke-width: 5px;
+  }
+
+  .cls-4 {
+    stroke-width: 2px;
+  }
+
+  .cls-5 {
+    stroke: none;
+  }

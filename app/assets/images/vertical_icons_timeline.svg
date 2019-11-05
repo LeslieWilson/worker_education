@@ -1,85 +1,34 @@
-import React, { useState } from 'react'
-import StepTile from "../components/landing_page/StepTile"
-
-
-const OptionsPage = (props) =>{
-  const[hiddenFields, setHiddenFields] = useState(true)
-
-  const stepData=[
-    {
-      id:1,
-      image:"https://i.imgur.com/MRuIRf0.png",
-      description:"A coding bootcamp is an intensive program",
-      class:"pics1"
-    },
-    {
-      id:2,
-      image:"https://i.imgur.com/MRuIRf0.png",
-      description:"A coding bootcamp is an intensive program",
-      class:"pics1"
-    },
-    {
-      id:3,
-      image:"https://i.imgur.com/MRuIRf0.png",
-      description:"A coding bootcamp is an intensive program",
-      class:"pics1"
-    }
-  ]
-  const stepTiles = stepData.map(step =>{
-    return(
-      <StepTile
-        key={step.id}
-        image={step.image}
-        description={step.description}
-      />
-    )
-  })
-
-let forms = <></>
-
-const handleClick = () => {
-return setHiddenFields(false)
-}
-
-if (hiddenFields===false){
-forms =
-<div className= "wrapper">
-  <ContactForm />
-  <WeekCalendar />
-</div>
-}
-
-let styles = {
-  width:'30%'
-}
-
-return (
-<div>
-
-<div className= "blockDiv">
-
-<div className = "blockLeft">
-<h1 className= "blockLeftText">I have a bachelors</h1>
-</div>
-
-<div className="blockRight">
-<p style= {styles} className = "blockRightText">blaha;skdjfhlaskdjf;alsdkfjas;lkdfjas;lkdjfals;kdfjals;dkfjals;dkfjals;dkfjals;dkfjadls;kfjals;kdfjalksjdfhlkasjdfhlaksjdhfaklsjdhflaksjdhflkasjdhflaksdjfhlaksdjhflaksjdfhlaksjdhflkasjdhflaksdjhflaksdjhflaksdjhflaksjdhflaksjdhflaksdjhflaksjdhflaksdjhflaksjdhflaksjdhflaksjdhflkasjdhflksjdhfaskldjfh</p>
-</div>
-
-</div>
-
-<div className="FrontEndDev">
-<h2 className="fsd">Full Stack Development</h2>
-<h3 className="fsdSmall"> A coding bootcamp is a place where students receive intensive workforce development</h3>
-<img src='https://i.imgur.com/vUAJaWJ.jpg' width="100%" className="programming_languages"></img>
-</div>
-
-
-
-<div className="step-tiles-replacement-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="314.807" height="1597.034" viewBox="0 0 314.807 1597.034" className="svg2">
+<svg xmlns="http://www.w3.org/2000/svg" width="314.807" height="1597.034" viewBox="0 0 314.807 1597.034">
   <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: none;
+      }
 
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #fff;
+      }
+
+      .cls-1 {
+        stroke-width: 10px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke-width: 5px;
+      }
+
+      .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
   </defs>
   <g id="Group_1985" data-name="Group 1985" transform="translate(-140.598 -2159)">
     <g id="Group_1962" data-name="Group 1962" transform="translate(1541.87 2083.553) rotate(90)">
@@ -124,28 +73,3 @@ return (
     </g>
   </g>
 </svg>
-
-
-</div>
-
-<div className="total_scholarships">
-<h1 className="total">Total Scholarships</h1>
-<p className="totalp">blaha;lskdjf;lsakdfjl;sakdjfl;askdjfal;sdkfjals;dkfjl;asdkjfl;askdjfals;kdjfl;sakdjfals;kdjfalsdjfas;dklfjls;dkjflasdjfk;;alsdifjals;kdjfl;kejfr;wqoeulaskjdfhkas;jdfhlkasjdfhlksajdhflaskjdhflkasjdhflksajdhflkasjdhflksajdhflksajdhflkasjdhflksajdhflaskdjfhlsakdjhflaksjdhflaskjdhflaksjdhflkasjdhflkasjdhflkasdjhflaskdjfhlaskdjfhlaksjdhflaksjdhflaksjdhflaksjdhflaskdjhflaskdjhflsakdjfhlkasdjhflkasdjhflkasjdhf</p>
-
-<img src='https://i.imgur.com/IkfwDDJ.jpg' width="100%" className="programming_languages" className="scholarshipImg"></img>
-</div>
-
-
-<div className="schedule_call">
-<h1 className="skedgeAcall">Schedule a Call</h1>
-<p className="skedgep">lkasjdfhklsajdfhsakldfh</p>
-</div>
-
-<div>
-  <button onClick={handleClick}>Call Now</button>
-</div>
-
-</div>
-  )
-}
-export default OptionsPage
