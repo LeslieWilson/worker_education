@@ -9,45 +9,40 @@ export default class StandardCalendar extends React.Component {
     super(props);
     this.state = {
       lastUid: 4,
-      selectedIntervals: [{
-          uid: 1,
-          start: moment('October 31st 2019 1:00:03 PM'),
-          end: moment('October 31 2019 1:30:01 PM'),
-          value: "Booked by lesliee"
-        }
-
-      ]
+      SelectedIntervals:[]
     }
   }
 
-//   componentDidMount(){
-//     fetch(`api/v1/appointments/`)
-//     .then((response) =>{
-//       if (response.ok) {
-//         return response
-//       } else {
-//         let errorMessage = `${response.status}
-//         (${response.statusText})`,
-//         error = new Error(errorMessage)
-//         throw(error)
-//       }
-//     })
-//     .then(response => response.json())
-//     .then(body => {
-//       let banana = body.appointments
-//       debugger
-//       let newBanana = banana.map(item => {debugger
-//         start = moment(item.start)
-//         end = moment(item.end)
-//       })
-//       console.log(newBanana)
-//       this.setState({
-//         selectedIntervals: newBanana
-//       })
-//       console.log(this.state.selectedIntervals)
-//   })
-//   .catch(error => console.error(`Error in fetch: ${error.message}`))
-// }
+  componentDidMount(){
+    fetch(`api/v1/appointments/`)
+    .then((response) =>{
+      if (response.ok) {
+        return response
+      } else {
+        let errorMessage = `${response.status}
+        (${response.statusText})`,
+        error = new Error(errorMessage)
+        throw(error)
+      }
+    })
+    .then(response => response.json())
+    .then(body => {
+      let banana = body.appointments
+      let newBanana = banana.map(item => {
+        return({
+          start: moment(item.start, 'YYYY-MM-DD hh:mm:ss'),
+          end: moment(item.end,'YYYY-MM-DD hh:mm:ss'),
+          value: item.value,
+          uid: parseInt(item.uid)
+        }
+      )
+    })
+      this.setState({
+        selectedIntervals: newBanana
+      })
+  })
+  .catch(error => console.error(`Error in fetch: ${error.message}`))
+}
 
   handleEventRemove = (event) => {
     const {selectedIntervals} = this.state;
@@ -68,6 +63,7 @@ export default class StandardCalendar extends React.Component {
   }
 
   handleSelect = (newIntervals) => {
+    console.log(newIntervals)
     const {lastUid, selectedIntervals} = this.state;
     const intervals = newIntervals.map( (interval, index) => {
 
@@ -77,22 +73,61 @@ export default class StandardCalendar extends React.Component {
       }
     });
 
+  fetch("/api/v1/appointments/", {
+    method: "POST",
+    body: JSON.stringify(intervals[0]),
+    headers: {
+      Accept :"application/json", "Content-type": "application/json"
+    }
+  })
+  .then(response =>{
+    if(response.ok){
+      return response;
+    } else{
+      const errorMessage = `${response.status}
+      (${response.statusText})`
+      const error = new Error(errorMessage)
+      throw(error);
+    }
+  })
+  .then((response)=>{
+    return response.json()
+  })
+
+  .then((body)=>{
+    let banana = body.appointments
+    let newBanana = banana.map(item => {
+      return({
+        start: moment(item.start, 'YYYY-MM-DD hh:mm:ss'),
+        end: moment(item.end,'YYYY-MM-DD hh:mm:ss'),
+        value: item.value,
+        uid: parseInt(item.uid)
+      }
+    )
+  })
+    console.log(newBanana)
     this.setState({
-      selectedIntervals: selectedIntervals.concat(intervals),
-      lastUid: lastUid + newIntervals.length
+      selectedIntervals: newBanana
     })
     console.log(this.state.selectedIntervals)
-  }
+})
+.catch(error => console.error(`Error in fetch: ${error.message}`))
+}
+
+
 
   render() {
     return <WeekCalendar
       startTime = {moment({h: 9, m: 0})}
-      endTime = {moment({h: 15, m: 30})}
-      numberOfDays= {14}
+      endTime = {moment({h: 17, m: 30})}
+      numberOfDays= {7}
       selectedIntervals = {this.state.selectedIntervals}
       onIntervalSelect = {this.handleSelect}
       onIntervalUpdate = {this.handleEventUpdate}
       onIntervalRemove = {this.handleEventRemove}
+      scaleUnit = {60}
+      cellHeight = {60}
+      dayFormat='dddd'
     />
   }
 }

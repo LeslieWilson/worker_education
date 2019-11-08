@@ -106,43 +106,48 @@ const ContactForm = (props) => {
     <ErrorList errors={errors} />
 
     <label>
-    First Name
     <input
     name="first_name"
     onChange={handleFieldChange}
     value={newContact.first_name}
+    className= "first_name_class"
+    placeholder="FIRST NAME"
     />
     </label>
 
     <label>
-    Last Name
     <input
     name="last_name"
     onChange={handleFieldChange}
     value={newContact.last_name}
+    className="last_name_class"
+    placeholder="LAST NAME"
     />
     </label>
 
     <label>
-    Email
     <input
     name="email"
     onChange={handleFieldChange}
     value={newContact.email}
+    className="email_class"
+    placeholder="EMAIL"
     />
     </label>
 
     <label>
-    Phone Number
+
     <input
     name="phone_number"
     onChange={handleFieldChange}
     value={newContact.phone_number}
+    className="phone_class"
+    placeholder="PHONE NUMBER"
     />
     </label>
 
 
-    <input className="button submit-it" type="submit" value="Submit"/>
+    <input className="button_submit_it" type="submit" value="Submit"/>
 
     </form>
     </div>
