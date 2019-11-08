@@ -352,8 +352,13 @@ img.step-image{
 }
 
 .blockLeftText{
-  margin-top:34%;
+  margin-top:31%;
+  text-align:center;
+  font-family:'Din Alternate';
   font-size:4.5em;
+  max-width:5em;
+  margin-left:3em;
+
 }
 
 .blockRight{
@@ -381,6 +386,30 @@ height:55em;
 .step-tiles-replacement-2{
   background-color:rgb(0,166,177);
   height:45%;
+}
+
+.paragraph1{
+  position:absolute;
+  margin-left: 12em;
+  margin-top: 8em;
+  font-size:2em;
+  color:white;
+}
+
+.paragraph2{
+  position:absolute;
+  margin-left: 12em;
+  margin-top: 18em;
+  font-size:2em;
+  color:white;
+}
+
+.paragraph3{
+  position:absolute;
+  margin-left: 12em;
+  margin-top: 28em;
+  font-size:2em;
+  color:white;
 }
 
 .fsd{
@@ -485,7 +514,6 @@ full stack dev section of option page========*/
     background-size:100%;
     background-position: right 0px bottom -70px;
     height:50em;
-    background-color:blue;
   }
 
   body {
@@ -493,8 +521,145 @@ full stack dev section of option page========*/
       border-right: 0px solid white;
   }
 
+  .apply_now_btn {
+      color: rgb(39,171,181);
+      background-color: white;
+      font-size: 1.5em;
+      border: 2px solid rgb(39,171,181);
+      padding: 1.5em 4.5em 1.5em 4.5em;
+      margin-top: 2em;
+      margin-right: 0.6em;
+      font-family:'Din Alternate';
+  }
+
+.landing_page_paragraph {
+    font-size: 1.3em;
+    margin-left: 0em;
+    padding-left: 11em;
+    padding-right: 10em;
+    margin-top: 11.8em;
+    font-weight: bold;
+    max-width: 99em;
+    color: rgb(39,171,181);
+    font-family: 'Din Alternate';
 }
 
+ul.landing_page_bullets {
+    list-style-type: square;
+    margin-top: 2em;
+    margin-left: 10.25em;
+}
+
+.blue_form_background{
+  background: rgb(39,171,181);
+}
+
+#contact-form-title{
+  text-align:center;
+  font-family:'Din Alternate';
+  color:white;
+  font-size: 3.8em;
+  padding-top: 1em;
+  margin-bottom:1em;
+
+}
+
+.first_name_class, .last_name_class, .email_class, .phone_class {
+    size: 30em;
+    margin-left: 36%;
+    width: 27%;
+    height: 3em;
+    margin-top:1em;
+    background-color:rgb(39,171,181);
+    border-top-style:hidden;
+    border-right-style:hidden;
+    border-left-style:hidden;
+    border-bottom-style:white;
+}
+
+::placeholder{
+  color:white;
+  opacity:50%;
+  text-align:left;
+  font-family:'Din Alternate';
+  font-size:1.3em;
+}
+
+.button_submit_it{
+  color: rgb(39,171,181);
+  background-color: white;
+  font-size: 1.5em;
+  border: 2px solid rgb(39,171,181);
+  padding: 1.5em 4.5em 1.5em 4.5em;
+  margin-top: 2em;
+  margin-right: 0.6em;
+  font-family:'Din Alternate';
+  text-align:center;
+  margin-left:41%;
+  margin-top:3em;
+  margin-bottom:3em;
+}
+
+.box1 {
+    margin-left: -10em;
+    position: absolute;
+    margin-top: -1.6em;
+    color: white;
+}
+
+.box2 {
+    margin-left: -.6em;
+    position: absolute;
+    margin-top: -1.6em;
+    color: white;
+}
+
+.box3 {
+    margin-left: 8.7em;
+    position: absolute;
+    margin-top: -1.6em;
+    color: white;
+}
+
+.box1sm {
+    position: absolute;
+    margin-left: -20.5em;
+    margin-top: 0.1em;
+    color: white;
+}
+
+.box2sm {
+    position: absolute;
+    margin-left: -2.5em;
+    margin-top: 0.1em;
+    color: white;
+}
+
+.box3sm {
+    margin-left: 25em;
+    margin-top: 0.1em;
+    color: white;
+}
+
+.svg_test {
+    margin-left: 8%;
+    padding: 1em;
+    margin-top: 1.8em;
+    width: 86.5%;
+    height: 27em;
+}
+
+.bach_bubble_text{
+  margin-top:1em;
+  text-align:center;
+  font-family:'Din Alternate';
+  font-size:4.5em;
+  max-width:5em;
+  margin-left:2.7em;
+}
+
+
+}
 
 @media only screen and (min-width:1920px){
 
@@ -503,7 +668,6 @@ full stack dev section of option page========*/
     background-size:100%;
     background-position: right 0px bottom -70px;
     height:64em;
-    background-color:red;
   }
 
   body {
@@ -511,11 +675,8 @@ full stack dev section of option page========*/
       border-right: 100px solid white;
   }
 
+
 }
-
-
-
-
 
 
   .cls-1, .cls-6 {

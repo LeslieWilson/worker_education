@@ -57,18 +57,26 @@ const LandingPage = (props) => {
     <div>
     <div className = "image">
   <img src='' width="59%"></img>
+<div className="transparent">
       <div>
 
-        <p className="landing_page_paragraph">blahblah blah the perosn who is going to th emarket lourm ipseym. blah blah blah I hate this blah blah and I know who took th ebus to prtugal it was me. It was always me. I am so upset right now. I love worker education. I love coffee. I love rainbows. I love fishing. I love eating buscits.I want to say more stuff  so this will be a square.</p>
-        <ul className="landing_page_bullets">
-        <span className="largerBullet">
-          <li className="liLand1">WHO</li>
+        <p className="landing_page_paragraph">
+        The Center for Worker Education 501c(3) has created an in-person, 3-month summer software development boot camp program for eligible adults.
 
-            </span>
-          <li className="liLand2">WHAT</li>
-          <li className="liLand3">WHERE</li>
+        This program builds upon more typical coding bootcamp models, in that it offers an intensive, cutting-edge curriculum and job readiness upon graduation. It differs, however, with the addition of a pipeline track into a computer science bachelor's degree program, and continued support towards the degrees’ completion.
+
+        Importantly, our proposed program model is a pipeline for minority and low-income individuals to access an education and career path they would typically be excluded from.
+        This is done by: </p>
+        <ul className="landing_page_bullets">
+
+          <li className="liLand1">Providing computer-science education via a curriculum structured for working adults who are changing careers</li>
+
+
+          <li className="liLand2">Tailoring this curriculum to allow for direct access to an accelerated CS bachelor's degree via reciprocity with other colleges</li>
+          <li className="liLand3">Eliminating the need for high-interest bootcamp loans by providing our summer program at low or no cost to attendees</li>
 
         </ul>
+      </div>
       </div>
 
       <div className="btn">
@@ -76,8 +84,9 @@ const LandingPage = (props) => {
       </div>
 
       </div>
+      <div className = "blue_form_background">
         {forms}
-
+        </div>
 
       <div className="step-tiles-replacement">
 
@@ -132,17 +141,17 @@ const LandingPage = (props) => {
 
 
 
-<p className="box1">hello hello hello</p>
-<h3 className="box1sm">blah blah blahh</h3>
+<p className="box1">Online</p>
+<h3 className="box1sm">Weeks 1 to 4</h3>
 
 
 
-<p className="box2"> hello hi hi hi</p>
-<h3 className="box2sm">blah blah blahh</h3>
+<p className="box2">Bootcamp</p>
+<h3 className="box2sm">Weeks 5 to 9</h3>
 
 
-<p className="box3"> by by byyy</p>
-<h3 className="box3sm">blah blah blahh</h3>
+<p className="box3">Bachelors Degree</p>
+<h3 className="box3sm">One Year</h3>
 
       </div>
 

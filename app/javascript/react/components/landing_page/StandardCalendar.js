@@ -63,6 +63,7 @@ export default class StandardCalendar extends React.Component {
   }
 
   handleSelect = (newIntervals) => {
+    console.log(newIntervals)
     const {lastUid, selectedIntervals} = this.state;
     const intervals = newIntervals.map( (interval, index) => {
 
@@ -124,6 +125,9 @@ export default class StandardCalendar extends React.Component {
       onIntervalSelect = {this.handleSelect}
       onIntervalUpdate = {this.handleEventUpdate}
       onIntervalRemove = {this.handleEventRemove}
+      scaleUnit = {60}
+      cellHeight = {60}
+      dayFormat='dddd'
     />
   }
 }

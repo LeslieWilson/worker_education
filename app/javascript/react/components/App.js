@@ -21,6 +21,7 @@ import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import LandingPage from "../containers/LandingPage"
 import OptionsPage from "../containers/OptionsPage"
+import ApplicationPage from '../containers/ApplicationPage'
 
 export const App = (props) => {
   return(
@@ -28,6 +29,7 @@ export const App = (props) => {
 <Switch>
 <Route exact path="/" component={LandingPage} />
 <Route exact path="/options" component={OptionsPage} />
+<Route exact path="/apply" component={ApplicationPage} />
 </Switch>
 </BrowserRouter>
   )

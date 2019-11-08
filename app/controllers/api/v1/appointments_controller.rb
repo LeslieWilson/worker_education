@@ -7,7 +7,7 @@ class Api::V1::AppointmentsController < ApiController
   end
 
   def create
-binding.pry
+
     appointment = Appointment.new(appointment_params)
     if appointment.save
       render json:{
