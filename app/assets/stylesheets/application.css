@@ -706,3 +706,7 @@ ul.landing_page_bullets {
   .cls-5 {
     stroke: none;
   }
+
+  .dropzone{
+    border:3px solid purple;
+  }
