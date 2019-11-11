@@ -63,8 +63,7 @@ return (
 </div>
 
 <div className="blockRight">
-<p style= {styles} className = "blockRightText">Bootcamp pedagogy encourages learning only the most functional concepts in CS. Students must make things happen without necessarily knowing how or why. Unlike a computer science degree, where instructors have the luxury of time to increase the scope and depth of what is taught, bootcamps are geared towards fast employability (5).
-In contrast, computer science bachelor's degree programs teach the foundations of computer science. Someone with a CS degree would have knowledge of the underlying principles of software design. They would be more able to write clean and maintainable code and optimize applications for speed and efficiency. The greater context and depth of knowledge they have can inform the decisions they make in programming and lead to more valuable results, and this is something recruiters are well aware of.
+<p style= {styles} className = "blockRightText">Bootcamps encourage learning the most functional concepts in CS. Students make things happen without necessarily knowing why. In contrast, computer science bachelor's degree programs teach foundational knowledge.
 </p>
 </div>
 
@@ -79,11 +78,21 @@ In contrast, computer science bachelor's degree programs teach the foundations o
 
 
 <div className="step-tiles-replacement-2">
-<h1 className= "paragraph1">Phase One- CWE Summer
-This program launches June 2020 and runs until August 2020. In this time graduates are taught topics in computer science intensively,  and prepare their portfolios and classwork for review by college state admissions officers. Upon completion of the program, a certification is awarded, and entry into a bachelor's computer science degree program will be facilitated.
-</h1>
-<h1 className= "paragraph2">HIII</h1>
-<h1 className= "paragraph3">HIII</h1>
+<p className= "paragraph1">Phase One- CWE Summer: This program launches June 2020 and runs until August 2020. In this time graduates are taught topics in computer science intensively,  and prepare their portfolios and classwork for review by college state admissions officers.</p>
+
+<p className="paragraphOne">Upon completion of the program, a certification is awarded, and entry into a bachelor's computer science degree program will be facilitated.
+
+</p>
+
+
+<p className= "paragraph2">Students will attend the participating college of their choice for 1.5 years following the CWE summer. In this time they will maintain the grades necessary to remain in the program, and attain an accelerated BS in computer science while receiving academic support from the college and CWE.</p>
+
+  <p className="paragraphTwo">Existing Bachelor's degree credits the applicant may have, will count towards the completion of this new degree, thereby affecting this timeline.</p>
+
+<p className= "paragraph3">Bootcamp graduates will receive continuing career support services until they obtain an entry level software engineering position, and/or until such time as they enter into a CS bachelor's degree program in college.</p>
+
+<p className="paragraphThree">This support will continue throughout the year and until they graduate. Applicants will receive assistance working with any preexisting college credits, so they may be transferred to the college and count as credit towards this new degree.
+</p>
 
 <SecondTimeline />
 
@@ -92,20 +101,26 @@ This program launches June 2020 and runs until August 2020. In this time graduat
 
 <div className="total_scholarships">
 <h1 className="total">Total Scholarships</h1>
-<p className="totalp">blaha;lskdjf;lsakdfjl;sakdjfl;askdjfal;sdkfjals;dkfjl;asdkjfl;askdjfals;kdjfl;sakdjfals;kdjfalsdjfas;dklfjls;dkjflasdjfk;;alsdifjals;kdjfl;kejfr;wqoeulaskjdfhkas;jdfhlkasjdfhlksajdhflaskjdhflkasjdhflksajdhflkasjdhflksajdhflksajdhflkasjdhflksajdhflaskdjfhlsakdjhflaksjdhflaskjdhflaksjdhflkasjdhflkasjdhflkasdjhflaskdjfhlaskdjfhlaksjdhflaksjdhflaksjdhflaksjdhflaskdjhflaskdjhflsakdjfhlkasdjhflkasdjhflkasjdhf</p>
+<p className="totalp">Applicants will be screened for their eligibility for scholarships upon applying to the CWE program and will be required to apply for this funding. Determination for an applicants eligibility will be made from there by CWE CEO, the board, and DOL case managers and staff. </p>
 
 <img src='https://i.imgur.com/IkfwDDJ.jpg' width="100%" className="programming_languages" className="scholarshipImg"></img>
 </div>
 
+<div className="tuition_splash">
+<h1 className="tuition_title">Tuition</h1>
+<p className="tuition_paragraph">This program costs 10k for 3 months (50% the national average) and offers a full scholarship to eligible individuals. Students who complete the bootcamp and apply to one of our partner colleges, can expect an accelerated track to a CS bachelor's degree, and reduced tuition based on their performance in the CWE summer program. </p>
+<img src='https://i.imgur.com/cWjDLBg.jpg'></img>
+</div>
 
 <div className="schedule_call">
 <h1 className="skedgeAcall">Schedule a Call</h1>
-<p className="skedgep">lkasjdfhklsajdfhsakldfh</p>
+<p className="skedgep">Learn more about scholarships, curriculum, and start dates</p>
+<div>
+  <button className="call_now_btn" onClick={handleClick}>Call Now</button>
+</div>
 </div>
 
-<div>
-  <button onClick={handleClick}>Call Now</button>
-</div>
+<img src='https://i.imgur.com/9bMGjku.jpg'></img>
 
 </div>
   )

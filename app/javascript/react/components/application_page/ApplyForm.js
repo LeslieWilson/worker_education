@@ -127,18 +127,35 @@ const addApplicant = payload => {
 
 
 return(
-  <div className = "form" id="contact-form">
-  <h2 id="contact-form-title">Whats your contact information?</h2>
+
+<>
+
+<img src='https://i.imgur.com/U6cOHrP.jpg' className="menubar"></img>
+
+  <div className="applicationheader">
+  <h2 id="contact-form-title">Apply</h2>
+  </div>
+
+  <div className="generalinfo">
+<img src='https://i.imgur.com/7Nxu3zD.jpg' className="ginfo"></img>
+  </div>
+
+
+
+
+<div className="applyFormFieldsLeft">
+
 
   <form onSubmit={handleContactSubmit} className="contactform">
   <ErrorList errors={errors} />
+
 
   <label>
   <input
   name="first_name"
   onChange={handleFieldChange}
   value={newApplicant.first_name}
-  className= "first_name_klass"
+  className= "applyFormFieldsLeft"
   placeholder="FIRST NAME"
   />
   </label>
@@ -148,7 +165,7 @@ return(
   name="last_name"
   onChange={handleFieldChange}
   value={newApplicant.last_name}
-  className="last_name_klass"
+  className="applyFormFieldsLeft"
   placeholder="LAST NAME"
   />
   </label>
@@ -158,7 +175,7 @@ return(
   name="email"
   onChange={handleFieldChange}
   value={newApplicant.email}
-  className="email_klass"
+  className="applyFormFieldsLeft"
   placeholder="EMAIL"
   />
   </label>
@@ -169,7 +186,7 @@ return(
   name="phone_number"
   onChange={handleFieldChange}
   value={newApplicant.phone_number}
-  className="phone_klass"
+  className="applyFormFieldsLeft"
   placeholder="PHONE NUMBER"
   />
   </label>
@@ -179,17 +196,31 @@ return(
   name="address"
   onChange={handleFieldChange}
   value={newApplicant.address}
-  className= "address_klass"
+  className= "applyFormFieldsLeft"
   placeholder="ADDRESS"
   />
   </label>
+
+
+  </form>
+  </div>
+
+
+
+
+
+<div className="applyFormFieldsRight">
+
+
+  <form onSubmit={handleContactSubmit} className="contactform2">
+  <ErrorList errors={errors} />
 
   <label>
   <input
   name="city"
   onChange={handleFieldChange}
   value={newApplicant.city}
-  className= "city_klass"
+  className= "applyFormFieldsRight"
   placeholder="CITY"
   />
   </label>
@@ -199,7 +230,7 @@ return(
   name="state"
   onChange={handleFieldChange}
   value={newApplicant.state}
-  className= "state_klass"
+  className= "applyFormFieldsRight"
   placeholder="STATE"
   />
   </label>
@@ -209,7 +240,7 @@ return(
   name="country"
   onChange={handleFieldChange}
   value={newApplicant.country}
-  className= "country_klass"
+  className= "applyFormFieldsRight"
   placeholder="COUNTRY"
   />
   </label>
@@ -219,7 +250,7 @@ return(
   name="age"
   onChange={handleFieldChange}
   value={newApplicant.age}
-  className= "age_klass"
+  className= "applyFormFieldsRight"
   placeholder="AGE"
   />
   </label>
@@ -229,28 +260,29 @@ return(
   name="current_income"
   onChange={handleFieldChange}
   value={newApplicant.current_income}
-  className= "current_income_klass"
+  className= "applyFormFieldsRight"
   placeholder="CURRENT INCOME"
   />
   </label>
 
-  <label>
-  <input
-  name="house_size"
-  onChange={handleFieldChange}
-  value={newApplicant.house_size}
-  className= "house_size_klass"
-  placeholder="HOUSE SIZE"
-  />
-  </label>
+<div className="dropdowns">
+<img src='https://i.imgur.com/iyxLqN2.jpg' className="geninfo"></img>
+</div>
 
   <MyDropzone />
-  <input className="button_submit_it" type="submit" value="Submit"/>
+  <input className="button_submit_it_blue" type="submit" value="Submit"/>
 
   </form>
 
-
+  <div className="logojpg">
+  <img src='https://i.imgur.com/9bMGjku.jpg' className="logojpg"></img>
   </div>
+</div>
+
+  </>
+
+
+
 )
 
 
