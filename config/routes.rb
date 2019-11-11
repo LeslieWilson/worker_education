@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :personal_datapoints, only: [:create]
       resources :appointments,
-      only: [:index, :create]
+      only: [:index, :create, :destroy]
     end
   end
 end
