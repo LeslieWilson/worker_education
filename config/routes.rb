@@ -12,6 +12,8 @@ Rails.application.routes.draw do
       resources :personal_datapoints, only: [:create]
       resources :appointments,
       only: [:index, :create]
+      resources :applicants,
+      only: [:create]
     end
   end
 end
