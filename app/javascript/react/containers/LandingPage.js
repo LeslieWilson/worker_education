@@ -68,11 +68,11 @@ const LandingPage = (props) => {
         This is done by: </p>
         <ul className="landing_page_bullets">
 
-          <li className="liLand1">Providing computer-science education via a curriculum structured for working adults who are changing careers</li>
+          <li className="liLand1">Providing computer-science education via a curriculum structured for working adults </li>
 
 
-          <li className="liLand2">Tailoring this curriculum to allow for direct access to an accelerated CS bachelor's degree via reciprocity with other colleges</li>
-          <li className="liLand3">Eliminating the need for high-interest bootcamp loans by providing our summer program at low or no cost to attendees</li>
+          <li className="liLand2">Tailoring curriculum for direct access to accelerated CS bachelors degrees via reciprocity with colleges</li>
+          <li className="liLand3">Eliminating high-interest bootcamp loans by providing program at low or no cost to attendees</li>
 
         </ul>
       </div>

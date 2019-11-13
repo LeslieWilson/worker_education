@@ -78,6 +78,11 @@ return (
 
 
 <div className="step-tiles-replacement-2">
+
+<h3 className='onlinetxt'>Online</h3>
+<h3 className= 'bootcamp'>Bootcamp</h3>
+<h3 className='bachelorsDegree'>Bachelors Degree</h3>
+
 <p className= "paragraph1">Phase One- CWE Summer: This program launches June 2020 and runs until August 2020. In this time graduates are taught topics in computer science intensively,  and prepare their portfolios and classwork for review by college state admissions officers.</p>
 
 <p className="paragraphOne">Upon completion of the program, a certification is awarded, and entry into a bachelor's computer science degree program will be facilitated.

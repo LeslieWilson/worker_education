@@ -5,7 +5,7 @@ const SecondTimeline = ()=>{
   return(
 
     <div>
-    <svg xmlns="http://www.w3.org/2000/svg" width="314.807" height="1597.034" viewBox="0 0 314.807 1597.034" className="svg2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="280.807" height="1597.034" viewBox="0 0 314.807 1597.034" className="svg2">
       <defs>
 
       </defs>

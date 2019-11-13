@@ -228,7 +228,7 @@ height:27em;
 }
 
 .textUnderSvgLanding{
-  font-size:4em;
+  font-size:3.2em;
   display:flex;
   justify-content: space-around;
   margin-bottom: 2em;
@@ -236,24 +236,24 @@ height:27em;
 }
 
 .box1{
-margin-left:-11em;
-position:absolute;
-margin-top:-1.3em;
-color:white
+  margin-left: -10em;
+      position: absolute;
+      margin-top: -2.4em;
+      color: white;
 }
 
 .box1sm{
-position:absolute;
-margin-left:-26.3em;
-margin-top:1.5em;
-color:white
+  position: absolute;
+      margin-left: -15.7em;
+      margin-top: -1.3em;
+      color: white;
 }
 
 .box2{
-  margin-left:-1em;
-  position:absolute;
-  margin-top:-1.3em;
-  color:white
+  margin-left: -.8em;
+    position: absolute;
+    margin-top: -2.4em;
+    color: white;
 }
 
 .box2sm{
@@ -343,7 +343,7 @@ img.step-image{
 }
 
 .blockLeft{
-  height:54em;
+  height:44em;
   width:50%;
   color:white;
   background-color:rgb(98,193,199);
@@ -352,26 +352,26 @@ img.step-image{
 }
 
 .blockLeftText{
-  margin-top:31%;
-  text-align:center;
-  font-family:'Din Alternate';
-  font-size:4.5em;
-  max-width:5em;
-  margin-left:3em;
+  margin-top: 26%;
+  text-align: center;
+  font-family: 'Din Alternate';
+  font-size: 4.5em;
+  max-width: 5em;
+  margin-left: 2.4em;
 
 }
 
 .blockRight{
-  height:27em;
-  width:50%;
-  color:rgb(0,166,177);
-  font-weight:bold;
-  font-size:2em;
+  height: 27em;
+width: 50%;
+color: rgb(0,166,177);
+font-weight: bold;
+font-size: 1.5em;
 }
 
 .blockRightText{
     margin-left: 10%;
-    margin-top: 17%;
+    margin-top: 15%;
     overflow-wrap:break-word;
     position:absolute;
 }
@@ -380,14 +380,14 @@ img.step-image{
 color: rgb(32,154,163);
 text-align:center;
 padding:4em;
-height:49em;
+height:40em;
 padding-bottom:1em;
 
 }
 
 .step-tiles-replacement-2{
   background-color:rgb(0,166,177);
-  height:45%;
+  height:20%;
 }
 
 .fsd{
@@ -398,70 +398,96 @@ padding-bottom:1em;
 }
 
 .fsdSmall{
-  font-size:1.7em;
+  font-size:1.5em;
   font-weight:bold;
   margin-bottom:1em;
   font-family:'Din Alternate'
 }
+.onlinetxt{
+  font-size: 2.8em;
+      color: white;
+      position: absolute;
+      margin-left: 5.2em;
+      margin-top: 6.4em;
+      font-family: 'din alternate';
+}
 
+.bootcamp{
+  font-size: 2.8em;
+      color: white;
+      position: absolute;
+      margin-left: 5.2em;
+      margin-top: 16.6em;
+      font-family: 'din alternate';
+}
+
+.bachelorsDegree{
+  font-size: 2.8em;
+  color: white;
+  position: absolute;
+  margin-left: 5.2em;
+  margin-top: 27em;
+  font-family: 'din alternate';
+  max-width: 1em;
+}
 .paragraph1{
-  position:absolute;
-  margin-left: 13em;
-  margin-top: 9.2em;
-  font-size:2em;
-  color:white;
-  font-family:'Din Alternate';
-  max-width:69%;
+  position: absolute;
+      margin-left: 19em;
+      margin-top: 9.2em;
+      font-size: 1.5em;
+      color: white;
+      font-family: 'Din Alternate';
+      max-width: 58%;
 }
 
 .paragraphOne{
   position:absolute;
-  margin-left: 13em;
-  margin-top: 15.2em;
-  font-size:2em;
+  margin-left: 19em;
+  margin-top: 16em;
+  font-size:1.5em;
   color:white;
   font-family:'Din Alternate';
-  max-width:69%;
+  max-width:58%;
 }
 
 .paragraph2{
   position:absolute;
-  margin-left: 13em;
-  margin-top: 26.2em;
-  font-size:2em;
+  margin-left: 19em;
+  margin-top: 28.2em;
+  font-size:1.5em;
   color:white;
   font-family:'Din Alternate';
-  max-width:69%;
+  max-width:58%;
 }
 
 .paragraphTwo{
   position:absolute;
-  margin-left: 13em;
-  margin-top: 33.5em;
-  font-size:2em;
+  margin-left: 19em;
+  margin-top: 35.5em;
+  font-size:1.5em;
   color:white;
   font-family:'Din Alternate';
-  max-width:69%;
+  max-width:58%;
 }
 
 .paragraph3{
   position:absolute;
-  margin-left: 13em;
-  margin-top: 42.5em;
-  font-size:2em;
+  margin-left: 19em;
+  margin-top: 48em;
+  font-size:1.5em;
   color:white;
   font-family:'Din Alternate';
-  max-width:69%;
+  max-width:58%;
 }
 
 .paragraphThree{
   position:absolute;
-  margin-left: 13em;
-  margin-top: 48.2em;
-  font-size:2em;
+  margin-left: 19em;
+  margin-top: 53.5em;
+  font-size:1.5em;
   color:white;
   font-family:'Din Alternate';
-  max-width:69%;
+  max-width:58%;
 }
 
 /*
@@ -475,9 +501,9 @@ transform:rotate(90deg);
 }*/
 
 .svg2{
-  margin-left:7em;
-  margin-top:8em;
-  margin-bottom:7em;
+  margin-left: 7em;
+      margin-top: 2em;
+      margin-bottom: 0em;
 }
 
 .total_scholarships{
@@ -496,7 +522,7 @@ transform:rotate(90deg);
 
 .totalp{
   color:rgb(32,154,163);
-  font-size:2em;
+  font-size:1.5em;
   max-width:69%;
   margin-top:2em;
   margin-left:18%;
@@ -511,18 +537,18 @@ margin-top:3em;
 
 .tuition_title{
   color: white;
-      position: absolute;
-      margin-top: 2em;
-      font-size: 5em;
-      font-family: 'din alternate';
-      margin-left: 9.9em;
+    position: absolute;
+    margin-top: 1em;
+    font-size: 5em;
+    font-family: 'din alternate';
+    margin-left: 7.6em;
 }
 
 .tuition_paragraph{
   color: white;
     position: absolute;
     margin-top: 9.9em;
-    font-size: 2em;
+    font-size: 1.5em;
     max-width: 69%;
     margin-left: 9.2em;
     font-family: 'din alternate';
@@ -543,9 +569,10 @@ margin-top:3em;
 }
 
 .skedgep{
-  text-align:center;
-  color:rgb(0,166,177);
-  font-size:2em;
+  text-align: center;
+    color: rgb(0,166,177);
+    font-size: 1.5em;
+    font-family: 'din alternate';
 }
 
 
@@ -559,7 +586,7 @@ margin-top:3em;
     margin-right: 0.6em;
     font-family: 'Din Alternate';
     text-align: center;
-    margin-left: 31em;
+    margin-left: 23.1em;
 }
 /*.steps-info-2{
 
@@ -582,8 +609,6 @@ margin-top:3em;
 
 
 
-
-
 /*
 full stack dev section of option page========*/
 
@@ -594,7 +619,7 @@ full stack dev section of option page========*/
     background:url("landing_background.gif") no-repeat ;
     background-size:100%;
     background-position: right 0px bottom -70px;
-    height:50em;
+    height:38em;
   }
 
   body {
@@ -603,22 +628,22 @@ full stack dev section of option page========*/
   }
 
   .apply_now_btn {
-      color: rgb(39,171,181);
-      background-color: white;
-      font-size: 1.5em;
-      border: 2px solid rgb(39,171,181);
-      padding: 1.5em 4.5em 1.5em 4.5em;
-      margin-top: 2em;
-      margin-right: 0.6em;
-      font-family:'Din Alternate';
+    color: rgb(39,171,181);
+  background-color: white;
+  font-size: 1.5em;
+  border: 2px solid rgb(39,171,181);
+  padding: 1em 2.5em 1em 2.5em;
+  margin-top: .9em;
+  margin-right: 1.5em;
+  font-family: 'Din Alternate';
   }
 
 .landing_page_paragraph {
-    font-size: 2em;
+    font-size: 1.6em;
     margin-left: 0em;
-    padding-left: 5em;
-    padding-right: 5em;
-    margin-top: 7.8em;
+    padding-left: 8em;
+    padding-right: 8em;
+    margin-top: 7.6em;
     font-weight: bold;
     max-width: 110em;
     color: rgb(39,171,181);
@@ -628,8 +653,9 @@ full stack dev section of option page========*/
 ul.landing_page_bullets {
     list-style-type: square;
     margin-top: 2em;
-    margin-left: .25em;
-    font-size:1.3em;
+    margin-left: 7.25em;
+    font-size:1em;
+  max-width:69em;
 }
 
 .blue_form_background{
@@ -651,18 +677,19 @@ ul.landing_page_bullets {
 
 #contact-form-title{
   text-align: center;
-      font-family: 'Din Alternate';
-      color: white;
-      font-size: 3.8em;
-      padding-top: 1em;
-      height: 3.18em;
-      margin-bottom: 1em;
-      margin-left:2em;
+    font-family: 'Din Alternate';
+    color: white;
+    font-size: 3em;
+    padding-top: 1em;
+    padding-bottom:.58em;
+    margin-left: 3.5em;
+    margin-right: 3em;
 
 }
 
 .menubar{
 position:absolute;
+width:15.4%;
 }
 
 .ginfo{
@@ -755,13 +782,12 @@ border-color: rgb(26,70,78);
 }*/
 
 
-
 .button_submit_it{
   color: rgb(39,171,181);
   background-color: white;
   font-size: 1.5em;
   border: 2px solid rgb(39,171,181);
-  padding: 1.5em 4.5em 1.5em 4.5em;
+  padding: 1em 2.5em 1em 2.5em;
   margin-top: 2em;
   margin-right: 0.6em;
   font-family:'Din Alternate';
@@ -771,51 +797,53 @@ border-color: rgb(26,70,78);
   margin-bottom:3em;
 }
 
-.box1 {
-    margin-left: -10em;
+
+.box1{
+  margin-left: -10em;
+      position: absolute;
+      margin-top: -2.4em;
+      color: white;
+}
+
+.box1sm{
+  position: absolute;
+      margin-left: -15.7em;
+      margin-top: -1.3em;
+      color: white;
+}
+
+.box2{
+  margin-left: -.8em;
     position: absolute;
-    margin-top: -1.6em;
+    margin-top: -2.4em;
     color: white;
 }
 
-.box2 {
-    margin-left: -.6em;
-    position: absolute;
-    margin-top: -1.6em;
-    color: white;
-}
+.box2sm{
+  position: absolute;
+      margin-left: -1.8em;
+      margin-top: -1.3em;
+      color: white;
+    }
 
 .box3 {
-    margin-left: 8.7em;
+  margin-left: 8.3em;
     position: absolute;
-    margin-top: -1.6em;
+    margin-top: -2.4em;
     color: white;
 }
 
-.box1sm {
-    position: absolute;
-    margin-left: -20.5em;
-    margin-top: 0.1em;
-    color: white;
-}
-
-.box2sm {
-    position: absolute;
-    margin-left: -2.5em;
-    margin-top: 0.1em;
-    color: white;
-}
 
 .box3sm {
-    margin-left: 25em;
-    margin-top: 0.1em;
-    color: white;
+  margin-left: 19.5em;
+  margin-top: -1.3em;
+  color: white;
 }
 
 .svg_test {
     margin-left: 8%;
     padding: 1em;
-    margin-top: 1.8em;
+    margin-top: -.2em;
     width: 86.5%;
     height: 27em;
 }
@@ -824,7 +852,7 @@ border-color: rgb(26,70,78);
   margin-top:1em;
   text-align:center;
   font-family:'Din Alternate';
-  font-size:4.5em;
+  font-size:3.5em;
   max-width:5em;
   margin-left: 2.7em;
   padding-bottom: 1em;
@@ -850,6 +878,9 @@ border-color: rgb(26,70,78);
 
 }
 
+.test{
+  color:rgb(39,171,181);
+}
 
   .cls-1, .cls-6 {
     fill: none;
@@ -880,16 +911,16 @@ border-color: rgb(26,70,78);
   }
 
   .dropzone{
-border: 3px dashed rgb(26,70,78);
-width: 51em;
-height: 14em;
-margin-top: 24em;
-margin-left: -300px;
-position: absolute;
-text-align:center;
-font-family:'din alternate';
-padding-top:3%;
-color:rgb(26,70,78);
+    border: 3px dashed rgb(26,70,78);
+        width: 47em;
+        height: 10em;
+        margin-top: 19em;
+        margin-left: -282px;
+        position: absolute;
+        text-align: center;
+        font-family: 'din alternate';
+        padding-top: 3%;
+        color: rgb(26,70,78);
   }
 
   .list_of_downloads{
@@ -904,13 +935,13 @@ color:rgb(26,70,78);
     color: white;
     background-color: rgb(39,171,181);
     font-size: 1.5em;
-    padding: 1.5em 4.5em 1.5em 4.5em;
-    margin-top: 29em;
+    border: 2px solid rgb(39,171,181);
+    padding: 1em 2.5em 1em 2.5em;
+    margin-top: 22em;
     margin-right: 0.6em;
     font-family: 'Din Alternate';
     text-align: center;
     margin-left: -2em;
-
   }
 
   .geninfo{
