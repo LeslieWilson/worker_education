@@ -7,6 +7,7 @@ import MyDropzone from "./MyDropzone"
 const ApplyForm = (props) =>{
   const [errors, setErrors] = useState({})
   const[shouldRedirect, setShouldRedirect] = useState(false)
+  const[banana, setHidden]= useState('applyFormFieldsLeft')
   const [newApplicant, setNewApplicant] = useState({
     first_name:"",
     last_name: "",
@@ -27,6 +28,7 @@ const ApplyForm = (props) =>{
       [event.currentTarget.name]: event.currentTarget.value
     })
   }
+
 
   const clearFields = (event) =>{
     event.preventDefault()
@@ -126,6 +128,12 @@ const addApplicant = payload => {
 }
 
 
+
+const toggleHidden = () =>{
+  if(hidden == "hidden"){setHidden('visible')}
+}
+
+
 return(
 
 <>
@@ -136,15 +144,12 @@ return(
   <h2 id="contact-form-title">Apply</h2>
   </div>
 
-  <div className="generalinfo">
+
+  <div className="generalinfo" onClick={toggleHidden}>
 <img src='https://i.imgur.com/7Nxu3zD.jpg' className="ginfo"></img>
   </div>
 
-
-
-
 <div className="applyFormFieldsLeft">
-
 
   <form onSubmit={handleContactSubmit} className="contactform">
   <ErrorList errors={errors} />
@@ -205,12 +210,7 @@ return(
   </form>
   </div>
 
-
-
-
-
 <div className="applyFormFieldsRight">
-
 
   <form onSubmit={handleContactSubmit} className="contactform2">
   <ErrorList errors={errors} />
@@ -265,18 +265,20 @@ return(
   />
   </label>
 
-<div className="dropdowns">
-<img src='https://i.imgur.com/iyxLqN2.jpg' className="geninfo"></img>
-</div>
-
-  <MyDropzone />
-  <input className="button_submit_it_blue" type="submit" value="Submit"/>
-
   </form>
+
+  <div className="dropdowns">
+  <img src='https://i.imgur.com/iyxLqN2.jpg' className="geninfo"></img>
+  </div>
+
+    <MyDropzone />
+    <input className="button_submit_it_blue" type="submit" value="Submit"/>
+
 
   <div className="logojpg">
   <img src='https://i.imgur.com/9bMGjku.jpg' className="logojpg"></img>
   </div>
+
 </div>
 
   </>
