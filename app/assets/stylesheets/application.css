@@ -110,7 +110,7 @@ a.WE_logo:hover{
 }
 
 .landing_page_paragraph{
-  font-size:1.1em;
+  font-size:1.3em;
   margin-left:11em;
  padding-left:14em;
  padding-right:5em;
@@ -362,10 +362,11 @@ img.step-image{
 }
 
 .blockRight{
-  height:54em;
+  height:27em;
   width:50%;
   color:rgb(0,166,177);
   font-weight:bold;
+  font-size:2em;
 }
 
 .blockRightText{
@@ -379,7 +380,8 @@ img.step-image{
 color: rgb(32,154,163);
 text-align:center;
 padding:4em;
-height:55em;
+height:49em;
+padding-bottom:1em;
 
 }
 
@@ -388,41 +390,80 @@ height:55em;
   height:45%;
 }
 
-.paragraph1{
-  position:absolute;
-  margin-left: 12em;
-  margin-top: 8em;
-  font-size:2em;
-  color:white;
-}
-
-.paragraph2{
-  position:absolute;
-  margin-left: 12em;
-  margin-top: 18em;
-  font-size:2em;
-  color:white;
-}
-
-.paragraph3{
-  position:absolute;
-  margin-left: 12em;
-  margin-top: 28em;
-  font-size:2em;
-  color:white;
-}
-
 .fsd{
   font-size:5em;
   font-weight:bold;
   margin-bottom:.5em;
+  font-family:'Din Alternate';
 }
 
 .fsdSmall{
   font-size:1.7em;
   font-weight:bold;
   margin-bottom:1em;
+  font-family:'Din Alternate'
 }
+
+.paragraph1{
+  position:absolute;
+  margin-left: 13em;
+  margin-top: 9.2em;
+  font-size:2em;
+  color:white;
+  font-family:'Din Alternate';
+  max-width:69%;
+}
+
+.paragraphOne{
+  position:absolute;
+  margin-left: 13em;
+  margin-top: 15.2em;
+  font-size:2em;
+  color:white;
+  font-family:'Din Alternate';
+  max-width:69%;
+}
+
+.paragraph2{
+  position:absolute;
+  margin-left: 13em;
+  margin-top: 26.2em;
+  font-size:2em;
+  color:white;
+  font-family:'Din Alternate';
+  max-width:69%;
+}
+
+.paragraphTwo{
+  position:absolute;
+  margin-left: 13em;
+  margin-top: 33.5em;
+  font-size:2em;
+  color:white;
+  font-family:'Din Alternate';
+  max-width:69%;
+}
+
+.paragraph3{
+  position:absolute;
+  margin-left: 13em;
+  margin-top: 42.5em;
+  font-size:2em;
+  color:white;
+  font-family:'Din Alternate';
+  max-width:69%;
+}
+
+.paragraphThree{
+  position:absolute;
+  margin-left: 13em;
+  margin-top: 48.2em;
+  font-size:2em;
+  color:white;
+  font-family:'Din Alternate';
+  max-width:69%;
+}
+
 /*
 .svg_test_2{
 margin-left: 8%;
@@ -446,7 +487,7 @@ transform:rotate(90deg);
 
 .total{
   color:rgb(32,154,163);
-  font-size:3.2em;
+  font-size:5em;
   text-align:center;
   margin-top:1em;
   font-weight:bold;
@@ -455,31 +496,71 @@ transform:rotate(90deg);
 
 .totalp{
   color:rgb(32,154,163);
-  font-size:1.5em;
-  max-width:52%;
+  font-size:2em;
+  max-width:69%;
   margin-top:2em;
-  margin-left:25%;
+  margin-left:18%;
   font-family:'Din Alternate';
   overflow-wrap:break-word;
 }
+
 
 .scholarshipImg{
 margin-top:3em;
 }
 
+.tuition_title{
+  color: white;
+      position: absolute;
+      margin-top: 2em;
+      font-size: 5em;
+      font-family: 'din alternate';
+      margin-left: 9.9em;
+}
+
+.tuition_paragraph{
+  color: white;
+    position: absolute;
+    margin-top: 9.9em;
+    font-size: 2em;
+    max-width: 69%;
+    margin-left: 9.2em;
+    font-family: 'din alternate';
+}
+
 
 .schedule_call{
   background-color:rgb(223,237,235);
+  height:30em;
 }
 
-.skedgeAcall{
-  text-align:center;
+.skedgeAcall {
+    text-align: center;
+    color: rgb(0,166,177);
+    padding-top: 1em;
+    font-size: 5em;
+    font-family: 'din alternate';
 }
 
 .skedgep{
   text-align:center;
+  color:rgb(0,166,177);
+  font-size:2em;
 }
 
+
+.call_now_btn{
+    color: white;
+    background-color: rgb(39,171,181);
+    font-size: 1.5em;
+    border: 2px solid rgb(39,171,181);
+    padding: 1.2em 4.5em 1.2em 4.5em;
+    margin-top: 2em;
+    margin-right: 0.6em;
+    font-family: 'Din Alternate';
+    text-align: center;
+    margin-left: 31em;
+}
 /*.steps-info-2{
 
   justify-content: space-around;
@@ -533,13 +614,13 @@ full stack dev section of option page========*/
   }
 
 .landing_page_paragraph {
-    font-size: 1.3em;
+    font-size: 2em;
     margin-left: 0em;
-    padding-left: 11em;
-    padding-right: 10em;
-    margin-top: 11.8em;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-top: 7.8em;
     font-weight: bold;
-    max-width: 99em;
+    max-width: 110em;
     color: rgb(39,171,181);
     font-family: 'Din Alternate';
 }
@@ -547,21 +628,60 @@ full stack dev section of option page========*/
 ul.landing_page_bullets {
     list-style-type: square;
     margin-top: 2em;
-    margin-left: 10.25em;
+    margin-left: .25em;
+    font-size:1.3em;
 }
 
 .blue_form_background{
   background: rgb(39,171,181);
 }
 
-#contact-form-title{
-  text-align:center;
-  font-family:'Din Alternate';
-  color:white;
-  font-size: 3.8em;
-  padding-top: 1em;
-  margin-bottom:1em;
 
+
+
+
+/*======applypage*/
+
+.applicationheader{
+  background-color:rgb(26, 70, 78);
+  width:100%;
+  text-align:center;
+  height:10%;
+}
+
+#contact-form-title{
+  text-align: center;
+      font-family: 'Din Alternate';
+      color: white;
+      font-size: 3.8em;
+      padding-top: 1em;
+      height: 3.18em;
+      margin-bottom: 1em;
+      margin-left:2em;
+
+}
+
+.menubar{
+position:absolute;
+}
+
+.ginfo{
+  position: absolute;
+  margin-left: 23%;
+  margin-top: 3%;
+  width: 69%;
+}
+
+img.geninfo{
+  position: absolute;
+  margin-left: -28%;
+  margin-top: 5%;
+  width: 69%;
+}
+
+
+.hidden{
+  visibilty:hidden !important;
 }
 
 .first_name_class, .last_name_class, .email_class, .phone_class {
@@ -577,13 +697,67 @@ ul.landing_page_bullets {
     border-bottom-style:white;
 }
 
-::placeholder{
+
+
+.applyFormFieldsLeft{
+size: 30em;
+margin-left: 16%;
+width: 65%;
+height: 2em;
+margin-top: 5em;
+border-top-style: hidden;
+border-right-style: hidden;
+border-left-style: hidden;
+border-bottom-style:black;
+margin-bottom:8px;
+padding-bottom:.2em;
+border-color: rgb(26,70,78);
+}
+
+.applyFormFieldsLeft::placeholder{
+  color:rgb(26,70,78);
+  opacity:50%;
+  text-align:left;
+  font-family:'Din Alternate';
+  font-size:1em;
+  margin-bottom:3em;
+}
+
+.applyFormFieldsRight{
+  margin-left: 51%;
+    width: 43%;
+    height: 6em;
+    margin-top: .8em;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+  border-color: rgb(26,70,78);
+
+}
+
+
+.applyFormFieldsRight::placeholder{
+  color:rgb(26,70,78);
+  opacity:50%;
+  text-align:left;
+  font-family:'Din Alternate';
+  font-size:1em;
+}
+
+/*::placeholder{
   color:white;
   opacity:50%;
   text-align:left;
   font-family:'Din Alternate';
   font-size:1.3em;
-}
+}*/
+
+/*.form{
+  display:flex;
+
+}*/
+
+
 
 .button_submit_it{
   color: rgb(39,171,181);
@@ -655,7 +829,8 @@ ul.landing_page_bullets {
   font-family:'Din Alternate';
   font-size:4.5em;
   max-width:5em;
-  margin-left:2.7em;
+  margin-left: 2.7em;
+  padding-bottom: 1em;
 }
 
 
@@ -706,3 +881,49 @@ ul.landing_page_bullets {
   .cls-5 {
     stroke: none;
   }
+
+  .dropzone{
+border: 3px dashed rgb(26,70,78);
+width: 51em;
+height: 14em;
+margin-top: 24em;
+margin-left: -300px;
+position: absolute;
+text-align:center;
+font-family:'din alternate';
+padding-top:3%;
+color:rgb(26,70,78);
+  }
+
+  .list_of_downloads{
+    margin-top: 35em;
+      font-size: 1.1em;
+      color: red;
+      font-weight: bold;
+      position: absolute;
+  }
+
+  .button_submit_it_blue{
+    color: white;
+    background-color: rgb(39,171,181);
+    font-size: 1.5em;
+    padding: 1.5em 4.5em 1.5em 4.5em;
+    margin-top: 29em;
+    margin-right: 0.6em;
+    font-family: 'Din Alternate';
+    text-align: center;
+    margin-left: -2em;
+
+  }
+
+  .geninfo{
+    position: absolute;
+  margin-left: -27%;
+  margin-top: 3%;
+  width: 69%;
+  }
+
+.logojpg{
+  position: absolute;
+
+}

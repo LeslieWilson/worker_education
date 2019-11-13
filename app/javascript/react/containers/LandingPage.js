@@ -65,11 +65,10 @@ const LandingPage = (props) => {
       <div>
 
         <p className="landing_page_paragraph">
-        The Center for Worker Education 501c(3) has created an in-person, 3-month summer software development boot camp program for eligible adults.
 
-        This program builds upon more typical coding bootcamp models, in that it offers an intensive, cutting-edge curriculum and job readiness upon graduation. It differs, however, with the addition of a pipeline track into a computer science bachelor's degree program, and continued support towards the degrees’ completion.
+         The addition of a pipeline track into a computer science bachelor's degree program, and continued support towards the degrees’ completion.
 
-        Importantly, our proposed program model is a pipeline for minority and low-income individuals to access an education and career path they would typically be excluded from.
+      A pipeline for low-income individuals to access a career path they would be excluded from.
         This is done by: </p>
         <ul className="landing_page_bullets">
 
@@ -168,14 +167,14 @@ const LandingPage = (props) => {
       <div className="bachelors_bubble1">
       <h1 className="bach_bubble_text"> I have a Bachelors degree</h1>
       <div className="btn">
-      <button onClick={handleClick} className="select_btn_1">Select</button>
+      <a href="/options" className="select_btn_1">Select</a>
       </div>
     </div>
     <br></br>
       <div className="bachelors_bubble2">
       <h1 className="bach_bubble_text">I don't have a Bachelors degree</h1>
       <div className="btn">
-      <button onClick={handleClick} className="select_btn_2">Select</button>
+      <a href="/options" className="select_btn_2">Select</a>
       </div>
       </div>
 

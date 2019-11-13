@@ -30,8 +30,8 @@ export default class StandardCalendar extends React.Component {
       let banana = body.appointments
       let newBanana = banana.map(item => {
         return({
-          start: moment(item.start, 'YYYY-MM-DD hh:mm:ss'),
-          end: moment(item.end,'YYYY-MM-DD hh:mm:ss'),
+          start: moment(item.start, 'YYYY-MM-DD hh:mm:ss').subtract(4, 'hours'),
+          end: moment(item.end,'YYYY-MM-DD hh:mm:ss').subtract(4, 'hours'),
           value: item.value,
           uid: parseInt(item.uid)
         }
@@ -98,8 +98,8 @@ export default class StandardCalendar extends React.Component {
     let banana = body.appointments
     let newBanana = banana.map(item => {
       return({
-        start: moment(item.start, 'YYYY-MM-DD hh:mm:ss'),
-        end: moment(item.end,'YYYY-MM-DD hh:mm:ss'),
+        start: moment(item.start, 'YYYY-MM-DD hh:mm:ss').subtract(4, 'hours'),
+        end: moment(item.end,'YYYY-MM-DD hh:mm:ss').subtract(4, 'hours'),
         value: item.value,
         uid: parseInt(item.uid)
       }
