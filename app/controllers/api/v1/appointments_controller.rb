@@ -18,6 +18,16 @@ class Api::V1::AppointmentsController < ApiController
     end
   end
 
+
+  def destroy
+    appointment_to_delete = Appointment.find(params[:id])
+    appointment_to_delete.destroy
+
+    render json: {
+      appointments: Appointment.all,
+    }
+  end
+
   private
 
   def appointment_params

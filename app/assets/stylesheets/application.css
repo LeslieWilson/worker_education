@@ -680,6 +680,9 @@ img.geninfo{
 }
 
 
+.hidden{
+  visibilty:hidden !important;
+}
 
 .first_name_class, .last_name_class, .email_class, .phone_class {
     size: 30em;
