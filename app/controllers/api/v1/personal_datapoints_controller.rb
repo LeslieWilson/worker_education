@@ -1,15 +1,12 @@
 class Api::V1::PersonalDatapointsController < ApiController
 
   def create
-
     personal_datapoint = PersonalDatapoint.new(personal_datapoint_params)
-
-
-    if personal_datapoint.save
-      render json: {status: "Success!"}
-    else
-      render json: {status: "Error"}
-    end
+      if personal_datapoint.save
+        render json: {status: "Success!"}
+      else
+        render json: {status: "Error"}
+      end
   end
 
   private

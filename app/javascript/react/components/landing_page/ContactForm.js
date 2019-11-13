@@ -12,7 +12,6 @@ const ContactForm = (props) => {
     email: "",
     phone_number: ""
   })
-
   const handleFieldChange = (event) => {
     setNewContact({
       ...newContact,
@@ -29,7 +28,6 @@ const ContactForm = (props) => {
     })
     setErrors({})
   }
-
   const validForSubmission = () => {
     let submitErrors = {}
     const requiredFields = ["email"]
@@ -42,12 +40,10 @@ const ContactForm = (props) => {
       }
     })
  setErrors(submitErrors)
-
   }
 
   const handleContactSubmit = (event) =>{
     event.preventDefault()
-
     let payload = {
       first_name:newContact.first_name,
       last_name:newContact.last_name,
@@ -76,9 +72,9 @@ const ContactForm = (props) => {
     })
 
     .then(response => {
-      if (response.ok) {
+      if (response.ok){
         return response;
-      } else {
+      }else{
         const errorMessage = `${response.status} (${response.statusText})`
         const error = new Error(errorMessage)
         throw(error);
@@ -99,59 +95,52 @@ const ContactForm = (props) => {
   // }
 
   return(
-    <div className = "form" id="contact-form">
+  <div className = "form" id="contact-form">
     <h2 id="contact-form-title">Whats your contact information?</h2>
-
     <form onSubmit={handleContactSubmit} className="contactform">
-    <ErrorList errors={errors} />
+      <ErrorList errors={errors} />
+      <label>
+        <input
+        name="first_name"
+        onChange={handleFieldChange}
+        value={newContact.first_name}
+        className= "first_name_class"
+        placeholder="FIRST NAME"
+        />
+      </label>
 
-    <label>
-    <input
-    name="first_name"
-    onChange={handleFieldChange}
-    value={newContact.first_name}
-    className= "first_name_class"
-    placeholder="FIRST NAME"
-    />
-    </label>
+      <label>
+        <input
+        name="last_name"
+        onChange={handleFieldChange}
+        value={newContact.last_name}
+        className="last_name_class"
+        placeholder="LAST NAME"
+        />
+      </label>
 
-    <label>
-    <input
-    name="last_name"
-    onChange={handleFieldChange}
-    value={newContact.last_name}
-    className="last_name_class"
-    placeholder="LAST NAME"
-    />
-    </label>
+      <label>
+        <input
+        name="email"
+        onChange={handleFieldChange}
+        value={newContact.email}
+        className="email_class"
+        placeholder="EMAIL"
+        />
+      </label>
 
-    <label>
-    <input
-    name="email"
-    onChange={handleFieldChange}
-    value={newContact.email}
-    className="email_class"
-    placeholder="EMAIL"
-    />
-    </label>
-
-    <label>
-
-    <input
-    name="phone_number"
-    onChange={handleFieldChange}
-    value={newContact.phone_number}
-    className="phone_class"
-    placeholder="PHONE NUMBER"
-    />
-    </label>
-
-
+      <label>
+        <input
+        name="phone_number"
+        onChange={handleFieldChange}
+        value={newContact.phone_number}
+        className="phone_class"
+        placeholder="PHONE NUMBER"
+        />
+      </label>
     <input className="button_submit_it" type="submit" value="Submit"/>
-
-    </form>
-    </div>
-  )
-}
+  </form>
+</div>
+)}
 
 export default ContactForm

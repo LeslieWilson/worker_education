@@ -11,7 +11,6 @@ skip_before_action :verify_authenticity_token
   end
 
   def create
-    binding.pry
     applicant = Applicant.new(applicant_params)
     applicant.user_id = current_user.id
     if applicant.save
@@ -26,7 +25,6 @@ skip_before_action :verify_authenticity_token
 private
 
 def applicant_params
-    params.require(:applicant).permit(:first_name, :last_name, :email, :phone_number, :address, :city, :state, :country, :age, :current_income, :house_size)
+    params.require(:applicant).permit(:first_name,:last_name, :email, :phone_number, :address, :city, :state, :country, :age, :current_income, :house_size)
   end
-
 end

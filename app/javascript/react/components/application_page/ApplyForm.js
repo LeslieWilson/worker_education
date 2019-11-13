@@ -29,7 +29,6 @@ const ApplyForm = (props) =>{
     })
   }
 
-
   const clearFields = (event) =>{
     event.preventDefault()
     setNewApplicant({
@@ -127,169 +126,143 @@ const addApplicant = payload => {
 })
 }
 
-
-
 const toggleHidden = () =>{
   if(hidden == "hidden"){setHidden('visible')}
 }
 
-
 return(
 
 <>
+  <img src='https://i.imgur.com/U6cOHrP.jpg' className="menubar"></img>
 
-<img src='https://i.imgur.com/U6cOHrP.jpg' className="menubar"></img>
+    <div className="applicationheader">
+      <h2 id="contact-form-title">Apply</h2>
+    </div>
 
-  <div className="applicationheader">
-  <h2 id="contact-form-title">Apply</h2>
-  </div>
+    <div className="generalinfo" onClick={toggleHidden}>
+      <img src='https://i.imgur.com/7Nxu3zD.jpg' className="ginfo"></img>
+    </div>
 
+    <div className="applyFormFieldsLeft">
+      <form onSubmit={handleContactSubmit} className="contactform">
+        <ErrorList errors={errors} />
+        <label>
+          <input
+          name="first_name"
+          onChange={handleFieldChange}
+          value={newApplicant.first_name}
+          className= "applyFormFieldsLeft"
+          placeholder="FIRST NAME"
+          />
+        </label>
 
-  <div className="generalinfo" onClick={toggleHidden}>
-<img src='https://i.imgur.com/7Nxu3zD.jpg' className="ginfo"></img>
-  </div>
+        <label>
+          <input
+          name="last_name"
+          onChange={handleFieldChange}
+          value={newApplicant.last_name}
+          className="applyFormFieldsLeft"
+          placeholder="LAST NAME"
+          />
+        </label>
 
-<div className="applyFormFieldsLeft">
+        <label>
+          <input
+          name="email"
+          onChange={handleFieldChange}
+          value={newApplicant.email}
+          className="applyFormFieldsLeft"
+          placeholder="EMAIL"
+          />
+        </label>
 
-  <form onSubmit={handleContactSubmit} className="contactform">
-  <ErrorList errors={errors} />
+        <label>
+          <input
+          name="phone_number"
+          onChange={handleFieldChange}
+          value={newApplicant.phone_number}
+          className="applyFormFieldsLeft"
+          placeholder="PHONE NUMBER"
+          />
+        </label>
 
+        <label>
+          <input
+          name="address"
+          onChange={handleFieldChange}
+          value={newApplicant.address}
+          className= "applyFormFieldsLeft"
+          placeholder="ADDRESS"
+          />
+        </label>
+      </form>
+    </div>
 
-  <label>
-  <input
-  name="first_name"
-  onChange={handleFieldChange}
-  value={newApplicant.first_name}
-  className= "applyFormFieldsLeft"
-  placeholder="FIRST NAME"
-  />
-  </label>
+  <div className="applyFormFieldsRight">
+    <form onSubmit={handleContactSubmit} className="contactform2">
+      <ErrorList errors={errors} />
+      <label>
+        <input
+        name="city"
+        onChange={handleFieldChange}
+        value={newApplicant.city}
+        className= "applyFormFieldsRight"
+        placeholder="CITY"
+        />
+      </label>
 
-  <label>
-  <input
-  name="last_name"
-  onChange={handleFieldChange}
-  value={newApplicant.last_name}
-  className="applyFormFieldsLeft"
-  placeholder="LAST NAME"
-  />
-  </label>
+      <label>
+        <input
+        name="state"
+        onChange={handleFieldChange}
+        value={newApplicant.state}
+        className= "applyFormFieldsRight"
+        placeholder="STATE"
+        />
+      </label>
 
-  <label>
-  <input
-  name="email"
-  onChange={handleFieldChange}
-  value={newApplicant.email}
-  className="applyFormFieldsLeft"
-  placeholder="EMAIL"
-  />
-  </label>
+      <label>
+        <input
+        name="country"
+        onChange={handleFieldChange}
+        value={newApplicant.country}
+        className= "applyFormFieldsRight"
+        placeholder="COUNTRY"
+        />
+      </label>
 
-  <label>
+      <label>
+        <input
+        name="age"
+        onChange={handleFieldChange}
+        value={newApplicant.age}
+        className= "applyFormFieldsRight"
+        placeholder="AGE"
+        />
+      </label>
 
-  <input
-  name="phone_number"
-  onChange={handleFieldChange}
-  value={newApplicant.phone_number}
-  className="applyFormFieldsLeft"
-  placeholder="PHONE NUMBER"
-  />
-  </label>
-
-  <label>
-  <input
-  name="address"
-  onChange={handleFieldChange}
-  value={newApplicant.address}
-  className= "applyFormFieldsLeft"
-  placeholder="ADDRESS"
-  />
-  </label>
-
-
-  </form>
-  </div>
-
-<div className="applyFormFieldsRight">
-
-  <form onSubmit={handleContactSubmit} className="contactform2">
-  <ErrorList errors={errors} />
-
-  <label>
-  <input
-  name="city"
-  onChange={handleFieldChange}
-  value={newApplicant.city}
-  className= "applyFormFieldsRight"
-  placeholder="CITY"
-  />
-  </label>
-
-  <label>
-  <input
-  name="state"
-  onChange={handleFieldChange}
-  value={newApplicant.state}
-  className= "applyFormFieldsRight"
-  placeholder="STATE"
-  />
-  </label>
-
-  <label>
-  <input
-  name="country"
-  onChange={handleFieldChange}
-  value={newApplicant.country}
-  className= "applyFormFieldsRight"
-  placeholder="COUNTRY"
-  />
-  </label>
-
-  <label>
-  <input
-  name="age"
-  onChange={handleFieldChange}
-  value={newApplicant.age}
-  className= "applyFormFieldsRight"
-  placeholder="AGE"
-  />
-  </label>
-
-  <label>
-  <input
-  name="current_income"
-  onChange={handleFieldChange}
-  value={newApplicant.current_income}
-  className= "applyFormFieldsRight"
-  placeholder="CURRENT INCOME"
-  />
-  </label>
-
-  </form>
-
-  <div className="dropdowns">
-  <img src='https://i.imgur.com/iyxLqN2.jpg' className="geninfo"></img>
-  </div>
+      <label>
+        <input
+        name="current_income"
+        onChange={handleFieldChange}
+        value={newApplicant.current_income}
+        className= "applyFormFieldsRight"
+        placeholder="CURRENT INCOME"
+        />
+      </label>
+    </form>
+    <div className="dropdowns">
+      <img src='https://i.imgur.com/iyxLqN2.jpg' className="geninfo"></img>
+    </div>
 
     <MyDropzone />
+
     <input className="button_submit_it_blue" type="submit" value="Submit"/>
-
-
-  <div className="logojpg">
-  <img src='https://i.imgur.com/9bMGjku.jpg' className="logojpg"></img>
+    <div className="logojpg">
+      <img src='https://i.imgur.com/9bMGjku.jpg' className="logojpg"></img>
+    </div>
   </div>
-
-</div>
-
-  </>
-
-
-
-)
-
-
-
-
-}
+</>
+)}
 
 export default ApplyForm
