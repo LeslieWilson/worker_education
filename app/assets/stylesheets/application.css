@@ -537,7 +537,7 @@ img.step-image{
 @media only screen and (min-width:1440px){
 
  .image{
-   background:url("landing_background.gif") no-repeat ;
+   background:image-url("landing_background.gif") no-repeat ;
    background-size:100%;
    background-position: right 0px bottom -70px;
    height:38em;
