@@ -757,7 +757,7 @@ img.geninfo{
 }
 
 
-@media only screen and (max-width:300px){
+@media only screen and (max-width:320px){
   .top-bar {
       background-color: rgb(19,170,180);
       height: 7.6em;
