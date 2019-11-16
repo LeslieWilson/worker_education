@@ -9,6 +9,8 @@ class Api::V1::AppointmentsController < ApiController
   def create
     appointment = Appointment.new(appointment_params)
       if appointment.save
+
+        AppointmentMailer.new_appointment(appointment).deliver_now
         render json:{
           appointments: Appointment.all
         }

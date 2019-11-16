@@ -785,6 +785,7 @@ img.geninfo{
       background-color: rgb(0,166,177);
       width: 100%;
       width: 54em;
+      height:40em;
   }
 
   .landing_page_paragraph {
@@ -847,7 +848,7 @@ img.geninfo{
 
 .bachelors_bubbles {
     display: flex;
-    width: 267%;
+    width: 272%;
     height: 118%;
     margin-top: -18%;
 }
