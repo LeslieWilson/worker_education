@@ -5,9 +5,8 @@ const ApplyButtonTile = (props) =>{
     <div className="image-wrapper">
       <div className= {props.className}>
         <div className="image-spacer">
-          <img className="step-image" src={props.image}></img>
+          <img className="button-image" src={props.image}></img>
         </div>
-        <p>{props.description}</p>
       </div>
     </div>
   )

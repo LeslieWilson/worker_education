@@ -30,10 +30,37 @@ body:before {
 body:after {
  bottom: 0;
 }
+.sidebar-left{
+  position: absolute;
+    background-color: rgb(17,86,97);
+    padding-bottom: 34.5em;
+    padding-top: 8.9em;
+    margin-top: -22.7em;
+    width: 16%;
 
-.button1{
-  font-size:10em;
+
+
 }
+
+.menuapply{
+  color: white;
+    position: absolute;
+    margin-top: -1.6em;
+    margin-left: 2.4em;
+    font-size: 1.9em;
+    font-family: 'din alternate';
+}
+
+.buttonapply{
+height:6em;
+}
+
+/*.image-spacer{
+  padding:2px;
+background-color:red;
+
+}*/
+
 
 /*navbar==================*/
 .top-bar{
@@ -603,10 +630,10 @@ ul.landing_page_bullets {
  margin-right: 3em;
 }
 
-.menubar{
+/*.menubar{
  position:absolute;
  width:15.4%;
-}
+}*/
 
 .ginfo{
  position: absolute;
