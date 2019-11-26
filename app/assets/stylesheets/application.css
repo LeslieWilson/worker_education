@@ -31,22 +31,35 @@ body:after {
  bottom: 0;
 }
 .sidebar-left{
-  position:absolute;
-  width:16%;
-  height:18%;
-  margin-top:-10em;
+  position: absolute;
+    background-color: rgb(17,86,97);
+    padding-bottom: 34.5em;
+    padding-top: 8.9em;
+    margin-top: -22.7em;
+    width: 16%;
 
+
+
+}
+
+.menuapply{
+  color: white;
+    position: absolute;
+    margin-top: -1.6em;
+    margin-left: 2.4em;
+    font-size: 1.9em;
+    font-family: 'din alternate';
 }
 
 .buttonapply{
-  height:-3em;
+height:6em;
 }
 
-.image-spacer{
+/*.image-spacer{
   padding:2px;
 background-color:red;
-height:30em;
-}
+
+}*/
 
 
 /*navbar==================*/

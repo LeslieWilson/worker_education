@@ -3,6 +3,7 @@ import ApplyForm from "../components/application_page/ApplyForm"
 import ApplyButtonTile from "../components/application_page/ApplyButtonTile"
 
 const ApplicationPage=(props) =>{
+
   const applyButtonData=[
     {
       id:1,
@@ -56,6 +57,7 @@ const ApplicationPage=(props) =>{
     <div>
       <ApplyForm />
       <div className="sidebar-left">
+      <h1 className='menuapply'>Menu</h1>
       {applyButtonTiles}
       </div>
     </div>
