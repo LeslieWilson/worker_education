@@ -133,8 +133,7 @@ const toggleHidden = () =>{
 return(
 
 <>
-  <img src='https://i.imgur.com/U6cOHrP.jpg' className="menubar"></img>
-
+  
     <div className="applicationheader">
       <h2 id="contact-form-title">Apply</h2>
     </div>

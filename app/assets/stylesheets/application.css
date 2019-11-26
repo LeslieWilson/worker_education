@@ -30,10 +30,24 @@ body:before {
 body:after {
  bottom: 0;
 }
+.sidebar-left{
+  position:absolute;
+  width:16%;
+  height:18%;
+  margin-top:-10em;
 
-.button1{
-  font-size:10em;
 }
+
+.buttonapply{
+  height:-3em;
+}
+
+.image-spacer{
+  padding:2px;
+background-color:red;
+height:30em;
+}
+
 
 /*navbar==================*/
 .top-bar{
@@ -603,10 +617,10 @@ ul.landing_page_bullets {
  margin-right: 3em;
 }
 
-.menubar{
+/*.menubar{
  position:absolute;
  width:15.4%;
-}
+}*/
 
 .ginfo{
  position: absolute;
